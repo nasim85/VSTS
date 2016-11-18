@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default Extension=".png" ContentType="image/png"/>
+  <Default Extension=".md" ContentType="text/markdown"/>
+  <Default Extension=".ps1" ContentType="text/ps1"/>
+  <Default Extension=".json" ContentType="application/json"/>
+  <Default Extension=".psd1" ContentType="application/octet-stream"/>
+  <Default Extension=".psm1" ContentType="application/octet-stream"/>
+  <Default Extension=".resjson" ContentType="text/plain"/>
+  <Default Extension=".txt" ContentType="text/plain"/>
+  <Default Extension=".pssproj" ContentType="application/octet-stream"/>
+  <Default Extension=".user" ContentType="text/plain"/>
+  <Default Extension=".vsixmanifest" ContentType="text/xml"/>
+  <Default Extension=".vsomanifest" ContentType="application/json"/>
+  <Override ContentType="application/octet-stream" PartName="/Nasim.VstsUpdateAssemplyInfoPowershell/LICENSE"/>
+  </Types>

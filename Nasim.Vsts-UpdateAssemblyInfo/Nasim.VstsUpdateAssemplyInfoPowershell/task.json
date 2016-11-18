@@ -1,0 +1,87 @@
+{
+  "id": "3df6e6e8-fe38-4903-98f9-f1fb467739f9",
+  "name": "Nasim.UpdateAssemblyInfo",
+  "friendlyName": "Update Assembly version info",
+  "description": "Update Assembly version, Company, Product, Copyright information",
+  "helpMarkDown": "[More Information](https://marketplace.visualstudio.com/)",
+  "category": "Utility",
+  "visibility": [ "Build", "Release", "Packaging" ],
+  "author": "Nasim",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 0
+  },
+  "demands": [ ],
+  "minimumAgentVersion": "1.95.0",
+
+  "inputs": [
+    {
+      "name": "Version",
+      "type": "string",
+      "label": "Assembly Version Format",
+      "defaultValue": "2016.5.0.B",
+      "required": true,
+      "helpMarkDown": "Assembly Version Format. Ex. 2016.5.0.B B will take take current itiration from Buid number format, put value in plave of B if needs specific values"
+    },
+	    {
+      "name": "BuildNumber",
+      "type": "string",
+      "label": "BuildNumber",
+      "defaultValue": "$(Build.BuildNumber)",
+      "required": true,
+      "helpMarkDown": "Get build number from the build to get the build itiration number."
+    },
+	    {
+      "name": "SourceLocation",
+      "type": "string",
+      "label": "Source Location",
+      "defaultValue": "$(build.sourcesDirectory)",
+      "required": true,
+      "helpMarkDown": "Build Source location to update assembly version"
+    },
+	{
+      "name": "AssemblyCompany",
+      "type": "string",
+      "label": "Assembly Company Name",
+      "defaultValue": "CompanyName.inc",
+      "required": false,
+      "helpMarkDown": "Company name replaced in AssemblyCompany in assemblyinfo"
+    },
+	{
+      "name": "AssemblyCopyright",
+      "type": "string",
+      "label": "Assembly Copyright",
+      "defaultValue": "© 2016 companyName",
+      "required": false,
+      "helpMarkDown": "Copyright replaced in AssemblyCopyright in assemblyinfo"
+    },
+	{
+      "name": "AssemblyProduct",
+      "type": "string",
+      "label": "Assembly Product name",
+      "defaultValue": "ProductName",
+      "required": false,
+      "helpMarkDown": "Product Name replaced in AssemblyProduct in assemblyinfo"
+    },
+	{
+      "name": "ScriptArguments",
+      "type": "string",
+      "label": "Arguments",
+      "defaultValue": "",
+      "required": false,
+      "helpMarkDown": "Arguments passed to the PowerShell script.  Either ordinal parameters or named parameters"
+    }
+  ],
+  "instanceNameFormat": "Update Assembly info",
+  "execution": {
+    "PowerShell3": {
+      "target": "$(currentDirectory)\\vstsUpdateAssemblies.ps1"
+    },
+    "PowerShell": {
+      "target": "$(currentDirectory)\\vstsUpdateAssemblies.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+    "manifestVersion": 1,
+    "content": {
+        "details": {
+            "path": "Nasim.VstsUpdateAssemplyInfo.Extension/readme.md"
+        },
+        "license": {
+            "path": "Nasim.VstsUpdateAssemplyInfo.Extension/license.txt"
+        }
+    },
+    "contributions": [
+        {
+            "id": "Nasim.VstsUpdateAssemplyInfo",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Nasim.VstsUpdateAssemplyInfo"
+            }
+        }
+       
+    ],
+    "scopes": [],
+    "contributionTypes": []
+}

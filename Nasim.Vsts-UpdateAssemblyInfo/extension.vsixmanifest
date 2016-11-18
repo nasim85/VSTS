@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="PeterGroenewegen-Xpirit-Vsts-Build-InlinePowershell" Version="1.1.3" Publisher="petergroenewegen" />
+    <DisplayName>Update Assembly info before build packaging</DisplayName>
+    <GalleryFlags>Public</GalleryFlags>
+    <Description xml:space="preserve">Build extension that enable you to update assembly version, company name, copyright, product Name .</Description>
+    <Categories>Build and release</Categories>
+    <Tags>powershell,build,Release,assembly,info,version,copyright,__market</Tags>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://pgroene.wordpress.com/2016/05/20/using-the-inline-powershell-vsts-task" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/XpiritBV/Vsts-Build-Task-InlinePowershell/wiki" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#242b32" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+    </Properties>
+    <License>Nasim.VstsUpdateAssemplyInfo.Extension/license.txt</License>
+    <Icon>Nasim.VstsUpdateAssemplyInfo.Extension/images/AssemblyInfo.png</Icon>
+    <PublisherDetails>
+      <DisplayName>Nasim</DisplayName>
+    </PublisherDetails>
+  </Metadata>
+  <Dependencies />
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Services" />
+  </Installation>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" d:Source="File" Path="Nasim.VstsUpdateAssemplyInfo.Extension/readme.md" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.License" d:Source="File" Path="Nasim.VstsUpdateAssemplyInfo.Extension/license.txt" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" d:Source="File" Path="Nasim.VstsUpdateAssemplyInfo.Extension/images/AssemblyInfo.png" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Manifest" d:Source="File" Path="extension.vsomanifest" Addressable="true" />
+  </Assets>
+</PackageManifest>

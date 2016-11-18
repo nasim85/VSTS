@@ -1,0 +1,64 @@
+{
+    "manifestVersion": 1,
+    "id": "3df6e6e8-fe38-4903-98f9-f1fb467739f9",
+    "version": "1.0.0",
+    "name": "Nasim.UpdateAssemblyInfo",
+    "publisher": "Nasim",
+    "description": "Awesome tools to help you Update Assembly version, Company, Product, Copyright information.",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "icons": {
+        "default": "Nasim.VstsUpdateAssemplyInfo.Extension/images/AssemblyInfo.png"
+    },
+    "categories": [
+        "Build and release"
+    ],
+    "tags": [
+	"powershell",
+	"build",
+	"Release",
+	"assembly",
+	"info",
+	"version",
+	"copyright",
+	"__market"
+    ],
+    "content": {
+        "details": {
+            "path": "Nasim.VstsUpdateAssemplyInfo.Extension/readme.md"
+        },
+        "license": {
+            "path": "Nasim.VstsUpdateAssemplyInfo.Extension/license.txt"
+        }
+    },
+    "files": [
+    {
+      "path": "Nasim.VstsUpdateAssemplyInfoPowershell",
+      "addressable": true
+    }
+  ],
+    "branding": {
+        "color": "rgb(34, 34, 34)",
+        "theme": "dark"
+    },
+	"contributions": [
+        {
+            "id": "Nasim.VstsUpdateAssemplyInfoPowershell",
+            "type": "ms.vss-distributed-task.task",
+            "description": "Update Assembly version, Company, Product, Copyright information.",			
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Nasim.VstsUpdateAssemplyInfoPowershell",
+                "title": "Update Assembly Version info"
+            }
+        }
+       
+    ],
+    "scopes": [],
+   	"contributionTypes": []
+}
